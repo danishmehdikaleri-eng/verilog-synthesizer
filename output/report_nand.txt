@@ -1,0 +1,24 @@
+BDD / TECHNOLOGY-MAPPING REPORT
+================================
+Input module: comparator4
+Inputs: a3, a2, a1, a0, b3, b2, b1, b0
+Outputs: eq, gt, lt
+
+BDD:
+  eq: root=39, reduced BDD nodes=12
+  gt: root=94, reduced BDD nodes=11
+  lt: root=153, reduced BDD nodes=11
+
+Mapped cells:
+  NAND2: 56
+  TOTAL: 56
+
+Note: educational mapper (ROBDD + Shannon decomposition with
+constant folding and inverter sharing). Not an industrial tool.
+
+Mapping method    : structural via NOR duality
+  candidates: structural=64, structural via NOR duality=56, BDD=76
+  exact search: skipped (more than 4 inputs)
+
+BDD variable order: a3, b3, a2, b2, a1, b1, a0, b0
+Equivalence check : EQUIVALENT (exhaustive, 256 vectors)

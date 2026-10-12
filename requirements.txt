@@ -1,0 +1,2 @@
+# No third-party Python packages are required.
+# The synthesizer and SVG circuit drawing use the Python standard library.
